@@ -1,0 +1,6 @@
+package edu.pnu;
+
+@SpringBootTest
+public class QueryMethodTest {
+
+}

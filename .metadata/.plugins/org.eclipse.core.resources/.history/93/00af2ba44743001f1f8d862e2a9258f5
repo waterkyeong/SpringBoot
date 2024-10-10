@@ -1,0 +1,19 @@
+package edu.pnu;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class HelloController {
+	
+//	@GetMapping("/hello")
+//	public void hello() {
+//		// /WEB-INF/board/hello.jsp 호출
+//	}
+	
+	@GetMapping("/hello")
+	public String hello() {
+		// /WEB-INF/board/abcd.jsp 호출
+		return "abcd";
+	}
+}

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<htmlxmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+환영
+<a th:href="@{/login}">로그인</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+1721115646391	Rename resource 'Hello.jsp'
+1721118694578	Delete element
+1721119033218	Extract interface 'BoardService'
+1721119385912	Delete element
+1721119412663	Extract interface 'BoardService'
+1721194845206	Rename resource 'getBoardList.html'
+1721195726370	Rename resource 'getBoardList1.html'
+1721196816268	Rename resource 'getBoard.jsp'
+1721196829401	Rename resource 'getBoardList.jsp'
+1721197933554	Rename resource 'getBoard1.jsp'
+1721197937514	Rename resource 'getBoardList1.jsp'
+1721197984788	Delete element
+1721203492547	Delete element
+1721205574335	Move compilation unit
+1721206010729	Extract interface 'MemberService'
+1721209790043	Move compilation unit
+1721209841718	Move compilation unit
+1721210411952	Delete elements
+1721210584185	Extract interface 'MemberService'
+1721213379298	Move file
+1721213382938	Move file

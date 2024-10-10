@@ -1,0 +1,8 @@
+package edu.pnu.persistence;
+
+import edu.pnu.domain.Board;
+
+public class BoardRespository extends JpaRepository<Board, Long> {
+	
+
+}

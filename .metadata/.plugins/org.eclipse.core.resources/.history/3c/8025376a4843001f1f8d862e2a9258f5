@@ -1,0 +1,45 @@
+package edu.pnu;
+
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HelloController {
+
+	//localhost:8080/hello?name=홍길동
+	//Hello 홍길동
+	@GetMapping("/hello")
+	public String hello(String name) {
+		// /WEB-INF/board/abcd.jsp 호출
+		ModelAndView mv = new ModelAndView();
+		
+		mv.addObject("name", name);
+		mv.setViewName("hello");
+		
+		return mv;
+	}
+	
+//	@GetMapping("/hello")
+//	public String hello(Model model, String name) {
+//		// /WEB-INF/board/abcd.jsp 호출
+//		
+//		model.addAttribute("name", name);
+//		
+//		return "hello";
+//	}
+	
+//	@GetMapping("/hello")
+//	public void hello() {
+//		// /WEB-INF/board/hello.jsp 호출
+//	}
+	
+	
+//	@GetMapping("/hello")
+//	public String hello() {
+//		// /WEB-INF/board/abcd.jsp 호출
+//		return "abcd";
+//	}
+}

@@ -1,0 +1,19 @@
+package edu.pnu;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import edu.pnu.persistence.MemberRepository;
+
+@SpringBootTest
+public class RelationMappingTest {
+	@Autowired
+	private MemberRepository memberRepo; 
+	
+	 @Test
+	public void TestCascadeDelete() {
+		 memberRepo.deleteById("member2");
+	 }
+	 
+}

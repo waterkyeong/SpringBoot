@@ -1,0 +1,27 @@
+package edu.pnu;
+
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import edu.pnu.domain.Board;
+import edu.pnu.domain.Member;
+import edu.pnu.persistence.MemberRepository;
+
+public class RelationMappingTest {
+	@Autowired
+	private MemberRepository memberRepo; 
+	
+	 @Test
+	public void TestTwoWayMapping() {
+		 Member member = memberRepo.findById("member1").get();
+		 
+		 System.out.println("=========================================");
+		 System.out.println(member.getName()+"가(이) 저장한 게시글 목롟");
+		 System.out.println("=========================================");
+		 List<Board> list = member.getBoardlist();
+		 for(Board board : list)
+			 System.out.println(board.toString());
+	 }
+}
